@@ -1,11 +1,10 @@
 Image Capture Sample
 =====
-The Camera sample demonstrates how to use the Intel XDK Camera commands to take a picture
+The Camera sample demonstrates how to use the Intel XDK Camera commands to take a picture.
 
 Intel(R) XDK 
 -------------------------------------------
-This sample is part of the Intel(R) XDK. 
-Please sign up the beta at http://software.intel.com/en-us/html5.
+This sample is part of the Intel(R) XDK. Download the Intel(R) XDK at http://software.intel.com/en-us/html5. To see the technical details of the sample, please visit the sample article page at http://software.intel.com/en-us/articles/intel-xdk-simple-camera-sample.
 
 
 Important App Files
