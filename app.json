@@ -9,7 +9,7 @@
 "highlights" : ["Image Capture", "intel.xdk API"],
 "visible" : "true",
 "highlights" : ["Image Capture", "intel.xdk API"],
-"apppreview":"false",
+"apppreview":"true",
 "appname":"demo.camera",
 "relname":"4.0.0"
 }
