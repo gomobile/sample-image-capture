@@ -1,4 +1,5 @@
-
+/*jslint browser:true, devel:true, white:true, vars:true, eqeq:true */
+/*global $:false, intel:false*/
 /** 
  * This function runs once the page is loaded, but intel is not yet active 
  */
@@ -15,7 +16,7 @@ window.addEventListener("load", init, false);
 /**
  * Prevent Default Scrolling 
  */
-preventDefaultScroll = function(event) 
+var preventDefaultScroll = function(event) 
 {
     // Prevent scrolling on this element
     event.preventDefault();
@@ -52,7 +53,7 @@ var picturecount=0;
 
 function onSuccess(event) 
 {
-    if (event.success == true)
+    if (event.success === true)
     {
         var imagesrc = intel.xdk.camera.getPictureURL(event.filename);
         var pic1 = document.getElementById("photoone");
@@ -60,21 +61,21 @@ function onSuccess(event)
         var pic3 = document.getElementById("photothree");
         var changebutton = document.getElementById("buttonid");    
 
-        pic3.src = pic2.src
+        pic3.src = pic2.src;
         pic2.src = pic1.src;
         pic1.src = imagesrc;
 
         if(picturecount>=2)  
         {
             changebutton.innerHTML = "Make Slideshow";
-            changebutton.className = "button showbutton"
+            changebutton.className = "button showbutton";
             changebutton.onclick=makeslideshow;
         } 
         picturecount++;       
     }
     else
     {
-        if (event.message != undefined)
+        if (event.message !== undefined)
         {
             alert(event.message);
         }
