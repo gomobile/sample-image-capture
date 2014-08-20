@@ -1,6 +1,6 @@
 {
-"reponame":"sample-imagecapture",
-"title":"Image Capture",
+"reponame":"sample-Camera",
+"title":"Camera",
 "tooltip":"A demonstration of how to use the Intel XDK Camera commands to take a picture",
 "description":"This demonstration illustrates how to use the camera features of hybrid apps built using the Intel XDK.",
 "articleUrl":"http://software.intel.com/en-us/articles/intel-xdk-simple-camera-sample",

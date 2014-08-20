@@ -28,23 +28,16 @@ window.document.addEventListener("touchmove", preventDefaultScroll, false);
 
 /**
  * Device Ready Code 
- * This event handler is fired once the JavaScript bridge library is ready
- */
-function onDeviceReady()
-{
-    //lock orientation
-    intel.xdk.device.setRotateOrientation("portrait");
-    intel.xdk.device.setAutoRotate(false);
-        
-    //manage power
-    intel.xdk.device.managePower(true,false);
+*/
 
-    //hide splash screen
-    intel.xdk.device.hideSplashScreen();
-}
-    
-document.addEventListener("intel.xdk.device.ready",onDeviceReady,false); 
-   
+var onDeviceReady=function(){                             // called when Cordova is ready
+   if( window.Cordova && navigator.splashscreen ) {     // Cordova API detected
+        navigator.splashscreen.hide() ;                 // hide splash screen
+    }
+} ;
+document.addEventListener("deviceready", onDeviceReady, false);
+
+
 //Event listener for camera
 document.addEventListener("intel.xdk.camera.picture.add",onSuccess); 
 document.addEventListener("intel.xdk.camera.picture.busy",onSuccess); 
