@@ -1,4 +1,4 @@
-/*jslint browser:true, devel:true, white:true, vars:true, eqeq:true */
+/*jslint sloppy:true, browser:true, devel:true, white:true, vars:true, eqeq:true, plusplus:true */
 /*global $:false, intel:false*/
 /** 
  * This function runs once the page is loaded, but intel is not yet active 
