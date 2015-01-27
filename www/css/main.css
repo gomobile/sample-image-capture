@@ -1,0 +1,268 @@
+/******************GLOBAL**************************/
+@-ms-viewport{
+  width: device-width;
+}
+
+html { 
+	width:100%; height:100%;
+	overflow-x:hidden;
+	font-family:Helvetica, Arial, sans-serif; 
+	-webkit-text-size-adjust:100%; 
+}
+
+* { 
+	margin:0; padding:0; 
+	-webkit-box-sizing:border-box; box-sizing:border-box;
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-touch-action:none;
+    overflow: hidden;
+}
+
+img { border:none; }
+
+body {
+	width:100%;	height:100%;
+    overflow:hidden;
+    -webkit-user-select:none;
+    font-family:"AmbleRegular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+input,textarea
+{
+    -webkit-user-select:text;
+    -moz-user-select:text;
+}
+
+::selection { 
+	background:#aaa; 
+	color:#fff; 
+}
+
+a:focus, a:active, a:hover { outline:0; }
+
+.clear { clear:both; }
+.wrapper { float:left; }
+
+
+
+/******************* SMARTPHONE [DEFAULT STYLES] **************************/
+.masthead {
+	background-color:white;
+    height:50px;
+}
+
+.logo {
+    float:left;
+    margin:10px;
+}
+
+.content {
+    display:block;
+    width:100%; height:100%;
+	background-image:-webkit-gradient(linear,color-stop(0.01, rgb(0,84,154)),color-stop(0.16, rgb(2,90,160)),color-stop(1, rgb(11,125,193)));
+	background-image:-webkit-linear-gradient(rgb(0,84,154) 1%,rgb(2,90,160) 16%,rgb(11,125,193) 100%);
+	background-image:-ms-linear-gradient(rgb(0,84,154) 1%,rgb(2,90,160) 16%,rgb(11,125,193) 100%);
+	background-image:linear-gradient(rgb(0,84,154) 1%,rgb(2,90,160) 16%,rgb(11,125,193) 100%);
+	background:rgb(0,84,154) url("../images/swoops.png") no-repeat;
+    background-position:bottom center;
+    -webkit-background-size:cover; background-size:cover;
+}
+
+.button {
+    display:inline-block;
+    position:absolute;
+    top: 50%;left: 50%;
+    margin-left: -115px;margin-top: 100px;
+    background-color:#a6a8aB;
+    background-image:-webkit-gradient(linear,45% 1%,45% 113%,color-stop(0.12, rgb(255,255,255)),color-stop(0.86, rgb(166,168,171)));
+    background-image:-webkit-linear-gradient(-90deg,rgb(255,255,255) 12%,rgb(166,168,171) 86%);
+    background-image:-ms-linear-gradient(-90deg,rgb(255,255,255) 12%,rgb(166,168,171) 86%);
+    background-image:linear-gradient(180deg,rgb(255,255,255) 12%,rgb(166,168,171) 86%);
+	width:229px; height:64px;
+	border:1px solid white;
+	-webkit-border-radius:15px; border-radius:15px;
+	-webkit-box-shadow:0px 1px 9px rgba(0,0,0,0.65); box-shadow:0px 1px 9px rgba(0,0,0,0.65);
+	font-family:inherit;
+    font-size:36px;
+	line-height: 65px;
+    color:rgb(17,125,193);
+    text-align:center;
+	cursor:pointer;
+	text-shadow:0 1px 0 white;
+    -webkit-transition:background-color 0.2s ease; transition:background-color 0.2s ease;
+}
+ .button:active, .button:focus { background-color:#fff; }
+
+#photoone {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -130px;
+    border: solid #ffffff 2pt;  
+    width: 80px;
+    height: 106px;   
+}
+
+#phototwo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -40px;
+    border: solid #ffffff 2pt;  
+    width: 80px;
+    height: 106px;   
+}
+
+#photothree {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -100px;
+    margin-left: 50px;
+    border: solid #ffffff 2pt;  
+     width: 80px;
+    height: 106px;  
+}
+
+#imagecontent {
+    position:absolute;
+    top:0px;
+    left:0px;
+    height:100%;
+    width:100%;
+    background:black
+}
+
+.slideshowpic {
+    width:100%;
+    height:auto;
+    position: absolute;
+}
+    
+.arrows {
+    position:absolute;
+    top:50%;
+    cursor: pointer;
+    width:24px;
+}
+
+#previousid {
+    left:5%;
+}
+
+#nextid {
+    right:5%;
+}
+
+.hide {
+    display: none;
+}
+
+.button .hide {
+    display:none;
+}
+
+.show {
+    display:block;
+}
+
+.button.showbutton {
+    width: 300px;
+    margin-left: -150px;
+}
+
+.endbutton {
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin-left:-72px;
+    margin-top:130px;
+}
+
+/************************ TABLET **************************/
+@media handheld,  screen and (min-width: 600px) and (min-height:640px), 
+only screen and (min-height: 440px) and (min-width:900px) {
+
+    .masthead { height:75px; }
+
+    .logo {
+        width:84px;
+        height:55px;
+        margin:10px;   
+    }
+
+    .content { 
+        background:rgb(0,84,154) url("../images/swoops-lg.png") no-repeat;
+        background-position:bottom center;
+        -webkit-background-size:cover; background-size:cover;
+    }
+ 
+    .button {
+        margin-left: -170px;
+        margin-top: 340px;
+        width:349px;height:89px;
+        border-width:2px;
+        -webkit-box-shadow:0px 1px 12px rgba(0,0,0,0.65);
+        box-shadow:0px 1px 12px rgba(0,0,0,0.65);
+        font-size:55px;
+        line-height:100px;
+        -webkit-border-radius:20px;border-radius:20px;
+        text-shadow:0 2px 0px rgb(255,255,255); 
+        background-image:-webkit-gradient(linear,30% 1%,30% 104%,color-stop(0.12, rgb(255,255,255)),color-stop(0.86, rgb(166,168,171)));
+    }
+
+    #photoone {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -200px;
+        margin-left: -288px;
+        border: solid #ffffff 3pt;
+        width:185px;
+        height:259px;    
+    }
+
+    #phototwo {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -200px;
+        margin-left: -93px;
+        border: solid #ffffff 3pt;
+        width:185px;
+        height:259px;   
+    }
+
+    #photothree {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -200px;
+        margin-left: 102px;
+        border: solid #ffffff 3pt;
+        width:185px;
+        height:259px;   
+    }
+
+    .button.showbutton {
+        width: 450px;
+        height: 100px;
+        margin-left: -225px;
+    }
+
+    .arrows {
+        width:50px;
+    }
+
+    .endbutton {
+        margin-left: -72px;
+        margin-top: 340px;
+    }
+
+}
+
+
