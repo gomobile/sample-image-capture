@@ -1,17 +1,33 @@
 <!DOCTYPE html><!--HTML5 doctype-->
 <html>
     <head>
+		<meta name="Copyright" content="&copy; 2013, Intel Corporation. All rights reserved." />
+		<!--
+		 * Copyright (c) 2013, Intel Corporation. All rights reserved.
+		 * Please see the included README.md file for license terms and conditions.
+		-->	
+		<!--
+		<script src="js/debug.js"></script>
+		-->
         <script>
-            (function() {
-                if ("-ms-user-select" in document.documentElement.style && navigator.userAgent.match(/IEMobile\/10\.0/)) 
-                {
-                    var msViewportStyle = document.createElement("style");
-                    msViewportStyle.appendChild(document.createTextNode("@-ms-viewport{width:auto!important}"));
-                    document.getElementsByTagName("head")[0].appendChild(msViewportStyle);
-                }
-            })();
+            (function () {
+            if ("-ms-user-select" in document.documentElement.style && navigator.userAgent.match(/IEMobile\/10\.0/)) 
+			{
+                var width = window.innerWidth;
+                var height = window.innerHeight;
+                var msViewportStyle = document.createElement("style");
+                msViewportStyle.appendChild(
+                    document.createTextNode(" @media screen and (orientation: landscape) {@-ms-viewport{width:auto!important}}")
+                );
+                msViewportStyle.appendChild(
+                    document.createTextNode(" @media screen and (orientation: portrait) {@-ms-viewport{width:auto!important;height:" + width + "px! important}}")
+                );
+                document.getElementsByTagName("head")[0].appendChild(msViewportStyle);
+
+            }
+			})();
         </script>
-        <title>Demo-Camera API</title>
+        <title>Demo - Hello World</title>
         <meta http-equiv="Content-type" content="text/html; charset=utf-8"> 
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
         <link href="css/fonts.css" rel="stylesheet" type="text/css" charset="utf-8" />
@@ -26,21 +42,9 @@
         <div class="masthead">
             <img class="logo" src="images/logo.png"/>
         </div>
-        <div class="content" id="contentid">
-            <div>
-                <div id="imagecontent" class="hide">
-                    <div id="imagespace">
-                        <img id="slideshowpicid" class="slideshowpic"/>
-                    </div>
-                    <img src="images/Arrow-L.png" class="arrows" id="previousid" onclick="Previous()"></img>
-                    <img src="images/Arrow-R.png" class="arrows" id="nextid" onclick="Next()"></img>
-                    <img src="images/EndShow.png" class="endbutton" onclick="endslideshow()"></img>
-                </div>
-                <img src="images/EmptyBox-Phone.png" id="photoone" />
-                <img src="images/EmptyBox-Phone.png" id="phototwo" />
-                <img src="images/EmptyBox-Phone.png" id="photothree" />
-            </div>
-            <div class="button" id="buttonid" onclick="takepicture()">Take Picture</div>
+        <div class="content">
+            <div id="headlineDIV" class="headline">Hello World!</div>
+            <div class="button" id="buttonid" onclick="beepOnce()">Beep!</div>
         </div>
     </body>
 </html>

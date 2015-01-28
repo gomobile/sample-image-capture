@@ -1,16 +1,14 @@
 {
-"reponame":"sample-image-capture",
-"title":"Image Capture",
-"tooltip":"A demonstration of how to use the Intel XDK Camera commands to take a picture",
-"description":"This demonstration illustrates how to use the camera features of hybrid apps built using the Intel XDK.",
-"articleUrl":"http://software.intel.com/en-us/articles/intel-xdk-simple-camera-sample",
-"visible" : "true",
-"keywords" : ["Image Capture", "intel.xdk API"],
-"visible" : "true",
-"highlights" : ["Image Capture", "intel.xdk API"],
-"apppreview":"true",
-"appname":"demo.camera",
-"relname":"4.0.0"
+	"reponame":"sample-helloworld",
+	"caption":"Hello World",
+	"tooltip":"Sample Hello World App",
+	"description":"Just the basics to get new developers started.",
+	"articleurl":"http://software.intel.com/en-us/articles/intel-xdk-hello-world-sample",
+	"keywords":["intel.xdk API"],
+	"highlights":["intel.xdk API"],
+	"visible": "true",
+	"apppreview":"true",
+	"appname":"demo.helloworldupdate",
+	"relname":"4.0.0",
+  	"projectTypeName": "com.intel.xdk.projecttype.jsapp"
 }
-
-
