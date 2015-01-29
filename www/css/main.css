@@ -1,6 +1,6 @@
 /******************GLOBAL**************************/
-@-ms-viewport {
-    width: device-width;
+@-ms-viewport{
+  width: device-width;
 }
 
 html { 
@@ -17,11 +17,10 @@ html {
     -webkit-user-select:none;
     -moz-user-select:none;
     -ms-touch-action:none;
+    overflow: hidden;
 }
 
-img { 
-    border:none; 
-}
+img { border:none; }
 
 body {
 	width:100%;	height:100%;
@@ -30,7 +29,8 @@ body {
     font-family:"AmbleRegular", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-input,textarea {
+input,textarea
+{
     -webkit-user-select:text;
     -moz-user-select:text;
 }
@@ -40,17 +40,12 @@ input,textarea {
 	color:#fff; 
 }
 
-a:focus, a:active, a:hover { 
-    outline:0; 
-}
+a:focus, a:active, a:hover { outline:0; }
 
-.clear { 
-    clear:both; 
-}
+.clear { clear:both; }
+.wrapper { float:left; }
 
-.wrapper { 
-    float:left; 
-}
+
 
 /******************* SMARTPHONE [DEFAULT STYLES] **************************/
 .masthead {
@@ -75,52 +70,124 @@ a:focus, a:active, a:hover {
     -webkit-background-size:cover; background-size:cover;
 }
 
-.headline {
-    display:inline-block;
-    width:100%;
-    text-align:center;
-    font-size:48px;
-    line-height:150%;
-    color:rgb(255,255,255);
-    text-shadow:1px 1px 0px rgba(0,55,100,0.8);
-    text-align:center;
-}
-
 .button {
     display:inline-block;
     position:absolute;
-    top:65%; left:50%;
-    margin-left:-85px;
+    top: 50%;left: 50%;
+    margin-left: -115px;margin-top: 100px;
     background-color:#a6a8aB;
-    background-image:-webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(85%,rgba(255,255,255,0)));
-    background-image:-webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 85%);
-    background-image:-ms-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(255,255,255,0) 85%);
-    background-image:linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,0)85%);
-	width:170px; height:62px;
+    background-image:-webkit-gradient(linear,45% 1%,45% 113%,color-stop(0.12, rgb(255,255,255)),color-stop(0.86, rgb(166,168,171)));
+    background-image:-webkit-linear-gradient(-90deg,rgb(255,255,255) 12%,rgb(166,168,171) 86%);
+    background-image:-ms-linear-gradient(-90deg,rgb(255,255,255) 12%,rgb(166,168,171) 86%);
+    background-image:linear-gradient(180deg,rgb(255,255,255) 12%,rgb(166,168,171) 86%);
+	width:229px; height:64px;
 	border:1px solid white;
-	-webkit-border-radius:8px; border-radius:8px;
-	-webkit-box-shadow:0px 1px 8px rgba(0,0,0,0.65); box-shadow:0px 1px 8px rgba(0,0,0,0.65);
+	-webkit-border-radius:15px; border-radius:15px;
+	-webkit-box-shadow:0px 1px 9px rgba(0,0,0,0.65); box-shadow:0px 1px 9px rgba(0,0,0,0.65);
 	font-family:inherit;
     font-size:36px;
-	line-height:62px;
+	line-height: 65px;
+    color:rgb(17,125,193);
     text-align:center;
-	color:rgb(17,125,193);
 	cursor:pointer;
 	text-shadow:0 1px 0 white;
     -webkit-transition:background-color 0.2s ease; transition:background-color 0.2s ease;
 }
+ .button:active, .button:focus { background-color:#fff; }
 
-.button:active, .button:focus { 
-    background-color:#fff; 
+#photoone {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -130px;
+    border: solid #ffffff 2pt;  
+    width: 80px;
+    height: 106px;   
+}
+
+#phototwo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -40px;
+    border: solid #ffffff 2pt;  
+    width: 80px;
+    height: 106px;   
+}
+
+#photothree {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -100px;
+    margin-left: 50px;
+    border: solid #ffffff 2pt;  
+     width: 80px;
+    height: 106px;  
+}
+
+#imagecontent {
+    position:absolute;
+    top:0px;
+    left:0px;
+    height:100%;
+    width:100%;
+    background:black
+}
+
+.slideshowpic {
+    width:100%;
+    height:auto;
+    position: absolute;
+}
+    
+.arrows {
+    position:absolute;
+    top:50%;
+    cursor: pointer;
+    width:24px;
+}
+
+#previousid {
+    left:5%;
+}
+
+#nextid {
+    right:5%;
+}
+
+.hide {
+    display: none;
+}
+
+.button .hide {
+    display:none;
+}
+
+.show {
+    display:block;
+}
+
+.button.showbutton {
+    width: 300px;
+    margin-left: -150px;
+}
+
+.endbutton {
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin-left:-72px;
+    margin-top:130px;
 }
 
 /************************ TABLET **************************/
 @media handheld,  screen and (min-width: 600px) and (min-height:640px), 
 only screen and (min-height: 440px) and (min-width:900px) {
 
-    .masthead { 
-        height:75px; 
-    }
+    .masthead { height:75px; }
 
     .logo {
         width:84px;
@@ -133,21 +200,69 @@ only screen and (min-height: 440px) and (min-width:900px) {
         background-position:bottom center;
         -webkit-background-size:cover; background-size:cover;
     }
-
-    .headline { 
-        font-size:120px;
-        text-shadow:3px 3px 0px rgba(0,55,100,0.8);
-    }
-    
+ 
     .button {
-        margin-left:-193px;
-        width:386px; height:142px;
+        margin-left: -170px;
+        margin-top: 340px;
+        width:349px;height:89px;
         border-width:2px;
         -webkit-box-shadow:0px 1px 12px rgba(0,0,0,0.65);
         box-shadow:0px 1px 12px rgba(0,0,0,0.65);
-        font-size:84px;
-        line-height:140px;
-        -webkit-border-radius:16px; border-radius:16px;
-        text-shadow:0 2px 0px rgb(255,255,255);
+        font-size:55px;
+        line-height:100px;
+        -webkit-border-radius:20px;border-radius:20px;
+        text-shadow:0 2px 0px rgb(255,255,255); 
+        background-image:-webkit-gradient(linear,30% 1%,30% 104%,color-stop(0.12, rgb(255,255,255)),color-stop(0.86, rgb(166,168,171)));
     }
+
+    #photoone {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -200px;
+        margin-left: -288px;
+        border: solid #ffffff 3pt;
+        width:185px;
+        height:259px;    
+    }
+
+    #phototwo {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -200px;
+        margin-left: -93px;
+        border: solid #ffffff 3pt;
+        width:185px;
+        height:259px;   
+    }
+
+    #photothree {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -200px;
+        margin-left: 102px;
+        border: solid #ffffff 3pt;
+        width:185px;
+        height:259px;   
+    }
+
+    .button.showbutton {
+        width: 450px;
+        height: 100px;
+        margin-left: -225px;
+    }
+
+    .arrows {
+        width:50px;
+    }
+
+    .endbutton {
+        margin-left: -72px;
+        margin-top: 340px;
+    }
+
 }
+
+

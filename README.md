@@ -1,36 +1,39 @@
-Hello World
+Image Capture Sample
 =====
-Hello World is a simple app that shows the basics of making an app
+The Camera sample demonstrates how to use the Intel XDK Camera commands to take a picture.
 
 Intel(R) XDK 
 -------------------------------------------
-This sample is part of the Intel(R) XDK tool. Please sign up 
-at http://software.intel.com/en-us/html5. To see the technical 
-detail of the sample, please visit the sample article page at 
-http://software.intel.com/en-us/articles/intel-xdk-hello-world-sample.
+This sample is part of the Intel(R) XDK. Download the Intel(R) XDK at http://software.intel.com/en-us/html5. To see the technical details of the sample, please visit the sample article page at http://software.intel.com/en-us/articles/intel-xdk-simple-camera-sample.
 
 
 Important App Files
 ---------------------------
-* index.html
+* app.json
 * icon.png
+* index.html
 * screenshot.png
 * js/main.js
+* images/Arrow-L.png
+* images/Arrow-R.png
+* images/EmptyBox-Phone.png
+* images/EmptyBox-Tablet.png
+* images/EndShow.png
 * images/logo.png
 * images/logo-lg.png
 * images/swoops.png
 * images/swoops-lg.png
 * css/fonts.css
 * css/main.css
-* css/webfonts/Amble-Regular-webfont.eot
-* css/webfonts/Amble-Regular-webfont.svg
-* css/webfonts/Amble-Regular-webfont.ttf
-* css/webfonts/Amble-Regular-webfont.woff
+* css/webfonts/Amble-Regular/Amble-Regular-webfont.eot
+* css/webfonts/Amble-Regular/Amble-Regular-webfont.svg
+* css/webfonts/Amble-Regular/Amble-Regular-webfont.ttf
+* css/webfonts/Amble-Regular/Amble-Regular-webfont.woff
 * css/webfonts/Apache License.txt
 
 License Information Follows
 ---------------------------
-Copyright (c) 2012, Intel Corporation. All rights reserved.
+Copyright (c) 2013, Intel Corporation. All rights reserved.
 
 Redistribution and use in source and binary forms, with or without modification, 
 are permitted provided that the following conditions are met:

@@ -5,11 +5,11 @@
       "type": "Demo",
       "createDefaultBuildConfigs": true,
       "projectTypeName": "com.intel.xdk.projecttype.jsapp",
-      "src": "https://edge-intel.s3.amazonaws.com/samples/production/sample-helloworldupdate/sample.zip",
+      "src": "https://edge-intel.s3.amazonaws.com/samples/production/sample-imagecapture/sample.zip",
       "sourceDirectory": "www",
-      "projectGuid": "2e8793db-71b5-408a-97c8-ba9205918960",
-      "lastModifiedDate": 1407899783810,
-      "creationDate": 1407897416074
+      "projectGuid": "f21a07a0-1fc7-458e-997e-f293b6a2aec7",
+      "lastModifiedDate": 1407903393673,
+      "creationDate": 1407900227644
     },
     "sourceDirectory": "www",
     "cordovaPluginsDirectory": "plugins",
@@ -34,42 +34,28 @@
     ],
     "cordovaPlugins": [
       {
-        
-        "id": "org.apache.cordova.device",
-        "version": "0.2.9",
-        "selectedState": "Auto",
+        "id": "intel.xdk.camera",
+        "selectedState": "Included",
         "data": {},
         "paramvals": {}
       },
       {
         "id": "org.apache.cordova.splashscreen",
         "version": "0.3.0",
-        "selectedState": "Auto",
-        "data": {},
-        "paramvals": {}
-      },
-      {
-        "id": "org.apache.cordova.vibration",
-        "version": "0.3.8",
         "selectedState": "Included",
         "data": {},
         "paramvals": {}
       },
       {
-        "id": "org.apache.cordova.dialogs",
-        "version": "0.2.6",
+        "id": "org.apache.cordova.device",
+        "version": "0.2.9",
         "selectedState": "Included",
         "data": {},
         "paramvals": {}
       },
       {
-        "id": "intel.xdk.device",
-        "selectedState": "Included",
-        "data": {},
-        "paramvals": {}
-      },
-      {
-        "id": "intel.xdk.notification",
+        "id": "org.apache.cordova.camera",
+        "version": "0.2.9",
         "selectedState": "Included",
         "data": {},
         "paramvals": {}
@@ -81,13 +67,13 @@
         "platform_": "android",
         "name_": "Android",
         "preferences_": {
+          "Orientation": "portrait",
           "android-minSdkVersion": "10",
-          "android-targetedSdkVersion": "19",
-          "Orientation": "portrait"
+          "android-targetedSdkVersion": "19"
         },
         "isActive_": true,
-        "appName_": "HelloWorld",
-        "appID_": "xdk.sample.helloworld",
+        "appName_": "CameraCapture",
+        "appID_": "xdk.sample.cameracapture",
         "appAccess_": "*",
         "icons_": [],
         "splashes_": [],
@@ -98,7 +84,7 @@
         "crosswalkVersion_": "stable",
         "appVersion_": "0.0.1",
         "runtime_": "Cordova 3.x",
-        "appDescription_": "Just the basics to get new developers started.",
+        "appDescription_": "This demonstration illustrates how to use the camera features of hybrid apps.",
         "appVersionCode_": "1"
       },
       "Android-Crosswalk": {
@@ -110,8 +96,8 @@
           "android-targetedSdkVersion": "19"
         },
         "isActive_": true,
-        "appName_": "HelloWorld",
-        "appID_": "xdk.sample.helloworld",
+        "appName_": "CameraCapture",
+        "appID_": "xdk.sample.cameracapture",
         "appAccess_": "*",
         "icons_": [],
         "splashes_": [],
@@ -122,7 +108,7 @@
         "crosswalkVersion_": "stable",
         "appVersion_": "0.0.1",
         "runtime_": "Crosswalk with Cordova 3.x",
-        "appDescription_": "Just the basics to get new developers started.",
+        "appDescription_": "This demonstration illustrates how to use the camera features of hybrid apps.",
         "appVersionCode_": "1"
       },
       "iOS": {
@@ -133,8 +119,8 @@
           "Orientation": "portrait"
         },
         "isActive_": true,
-        "appName_": "HelloWorld",
-        "appID_": "xdk.sample.helloworld",
+        "appName_": "CameraCapture",
+        "appID_": "xdk.sample.cameracapture",
         "appAccess_": "*",
         "icons_": [],
         "splashes_": [],
@@ -145,7 +131,7 @@
         "crosswalkVersion_": "stable",
         "appVersion_": "0.0.1",
         "runtime_": "Cordova 3.x",
-        "appDescription_": "Just the basics to get new developers started."
+        "appDescription_": "This demonstration illustrates how to use the camera features of hybrid apps."
       },
       "Windows8": {
         "platform_": "windows8",
@@ -154,8 +140,8 @@
           "Orientation": "portrait"
         },
         "isActive_": true,
-        "appName_": "HelloWorld",
-        "appID_": "xdk.sample.helloworld",
+        "appName_": "CameraCapture",
+        "appID_": "xdk.sample.cameracapture",
         "appAccess_": "*",
         "icons_": [],
         "splashes_": [],
@@ -166,14 +152,14 @@
         "crosswalkVersion_": "stable",
         "appVersion_": "0.0.0.1",
         "runtime_": "Cordova 3.x",
-        "appDescription_": "Just the basics to get new developers started."
+        "appDescription_": "This demonstration illustrates how to use the camera features of hybrid apps."
       },
       "WindowsPhone8": {
         "platform_": "wp8",
         "name_": "WindowsPhone8",
         "preferences_": {},
         "isActive_": true,
-        "appName_": "HelloWorld",
+        "appName_": "CameraCapture",
         "appID_": "not.yet.specified",
         "appAccess_": "*",
         "icons_": [],
