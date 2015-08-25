@@ -1,79 +1,47 @@
 {
     "project": {
-        "projectSettingsVersion": "2.0.0",
+        "projectSettingsVersion": "1.2",
         "creationData": {
+            "type": "Demo",
             "projectTypeName": "com.intel.xdk.projecttype.jsapp",
-            "src": "jsapp/sample-image-capture/sample.zip",
+            "src": "https://edge-intel.s3.amazonaws.com/jsapp/production/release-2014-ww51/sample-imagecapture/sample.zip",
             "projectGuid": "00000000-0000-0000-0000-000000000000",
-            "lastModifiedDate": 1440217071754,
-            "creationDate": 1440217015560
+            "lastModifiedDate": 1429659500172,
+            "creationDate": 1423528159397
         },
         "sourceDirectory": "www",
         "cordovaPluginsDirectory": "plugins",
         "startFile": "index.html",
         "projectFiles": {},
-        "projectDirectories": {
-            "www/xdk": {
-                "settings": {
-                    "project": {
-                        "XDK-generated": "true"
-                    }
-                }
-            }
-        },
+        "projectDirectories": {},
         "libraries": [],
         "cordovaPlugins": [
             {
-                "id": "cordova-plugin-splashscreen",
-                "version": "?",
+                "id": "org.apache.cordova.splashscreen",
+                "version": "0.3.5",
                 "selectedState": "Included",
                 "data": {},
                 "paramvals": {},
                 "dependsOn": [],
-                "dependedBy": [],
-                "originType": "cordova.io",
-                "origin": "cordova-plugin-splashscreen",
-                "permissions": {},
-                "topLevel": true,
-                "gitref": "",
-                "name": "Splashscreen",
-                "description": "Cordova Splashscreen Plugin"
+                "dependedBy": []
             },
             {
-                "id": "cordova-plugin-device",
-                "version": "?",
+                "id": "org.apache.cordova.device",
+                "version": "0.2.13",
                 "selectedState": "Included",
                 "data": {},
                 "paramvals": {},
                 "dependsOn": [],
-                "dependedBy": [],
-                "originType": "cordova.io",
-                "origin": "cordova-plugin-device",
-                "permissions": {},
-                "topLevel": true,
-                "gitref": "",
-                "name": "Device",
-                "description": "Cordova Device Plugin"
+                "dependedBy": []
             },
             {
-                "id": "cordova-plugin-camera",
-                "version": "?",
+                "id": "org.apache.cordova.camera",
+                "version": "0.3.4",
                 "selectedState": "Included",
                 "data": {},
                 "paramvals": {},
                 "dependsOn": [],
-                "dependedBy": [],
-                "originType": "cordova.io",
-                "origin": "cordova-plugin-camera",
-                "permissions": {
-                    "android:name": [
-                        "android.permission.WRITE_EXTERNAL_STORAGE"
-                    ]
-                },
-                "topLevel": true,
-                "gitref": "",
-                "name": "Camera",
-                "description": "Cordova Camera Plugin"
+                "dependedBy": []
             }
         ],
         "serviceMethods": [],
@@ -89,20 +57,18 @@
                     "android-installLocation": "auto"
                 },
                 "isActive_": true,
-                "appName_": "Image-Capture",
+                "appName_": "ImageCaptureDemo",
                 "appID_": "xdk.sample.cameracapture",
-                "appAccess_": {
-                    "mode": "legacy",
-                    "network": [
-                        "http://debug-software.intel.com/*"
-                    ],
-                    "intents": [],
-                    "navigation": []
-                },
+                "appAccess_": [
+                    {
+                        "origin": "*"
+                    }
+                ],
                 "icons_": [],
                 "splashes_": [],
                 "addlPermissions_": "",
                 "excludedLibraries_": "",
+                "iosProvs_": [],
                 "cordovaCLIVersion_": "?",
                 "crosswalkVersion_": "?",
                 "appVersion_": "0.0.1",
@@ -121,20 +87,18 @@
                     "android-installLocation": "auto"
                 },
                 "isActive_": true,
-                "appName_": "Image-Capture",
+                "appName_": "ImageCaptureDemo",
                 "appID_": "xdk.sample.cameracapture",
-                "appAccess_": {
-                    "mode": "legacy",
-                    "network": [
-                        "http://debug-software.intel.com/*"
-                    ],
-                    "intents": [],
-                    "navigation": []
-                },
+                "appAccess_": [
+                    {
+                        "origin": "*"
+                    }
+                ],
                 "icons_": [],
                 "splashes_": [],
                 "addlPermissions_": "",
                 "excludedLibraries_": "",
+                "iosProvs_": [],
                 "cordovaCLIVersion_": "?",
                 "crosswalkVersion_": "?",
                 "appAuthor_": "Intel XDK",
@@ -152,16 +116,13 @@
                     "ios-configuration": "adhoc"
                 },
                 "isActive_": true,
-                "appName_": "Image-Capture",
+                "appName_": "ImageCaptureDemo",
                 "appID_": "xdk.sample.cameracapture",
-                "appAccess_": {
-                    "mode": "legacy",
-                    "network": [
-                        "http://debug-software.intel.com/*"
-                    ],
-                    "intents": [],
-                    "navigation": []
-                },
+                "appAccess_": [
+                    {
+                        "origin": "*"
+                    }
+                ],
                 "icons_": [],
                 "splashes_": [],
                 "addlPermissions_": "",
@@ -181,21 +142,19 @@
                     "Orientation": "portrait"
                 },
                 "isActive_": true,
-                "appName_": "Image-Capture",
+                "appName_": "ImageCaptureDemo",
                 "appID_": "xdk.sample.cameracapture",
-                "appAccess_": {
-                    "mode": "legacy",
-                    "network": [
-                        "http://debug-software.intel.com/*"
-                    ],
-                    "intents": [],
-                    "navigation": []
-                },
+                "appAccess_": [
+                    {
+                        "origin": "*"
+                    }
+                ],
                 "icons_": [],
                 "splashes_": [],
                 "addlPermissions_": "",
                 "excludedLibraries_": "",
                 "appAuthor_": "Intel XDK",
+                "iosProvs_": [],
                 "cordovaCLIVersion_": "?",
                 "crosswalkVersion_": "?",
                 "appVersion_": "0.0.0.1",
@@ -207,16 +166,13 @@
                 "name_": "WebApp",
                 "preferences_": {},
                 "isActive_": false,
-                "appName_": "Image-Capture",
+                "appName_": "ImageCapture",
                 "appID_": "not.yet.specified",
-                "appAccess_": {
-                    "mode": "legacy",
-                    "network": [
-                        "http://debug-software.intel.com/*"
-                    ],
-                    "intents": [],
-                    "navigation": []
-                },
+                "appAccess_": [
+                    {
+                        "origin": "*"
+                    }
+                ],
                 "icons_": [],
                 "splashes_": [],
                 "addlPermissions_": "",
@@ -230,16 +186,13 @@
                 "name_": "Firefox",
                 "preferences_": {},
                 "isActive_": false,
-                "appName_": "Image-Capture",
+                "appName_": "ImageCapture",
                 "appID_": "not.yet.specified",
-                "appAccess_": {
-                    "mode": "legacy",
-                    "network": [
-                        "http://debug-software.intel.com/*"
-                    ],
-                    "intents": [],
-                    "navigation": []
-                },
+                "appAccess_": [
+                    {
+                        "origin": "*"
+                    }
+                ],
                 "icons_": [],
                 "splashes_": [],
                 "addlPermissions_": "",
@@ -253,16 +206,13 @@
                 "name_": "Chrome",
                 "preferences_": {},
                 "isActive_": false,
-                "appName_": "Image-Capture",
+                "appName_": "ImageCapture",
                 "appID_": "not.yet.specified",
-                "appAccess_": {
-                    "mode": "legacy",
-                    "network": [
-                        "http://debug-software.intel.com/*"
-                    ],
-                    "intents": [],
-                    "navigation": []
-                },
+                "appAccess_": [
+                    {
+                        "origin": "*"
+                    }
+                ],
                 "icons_": [],
                 "splashes_": [],
                 "addlPermissions_": "",
@@ -276,51 +226,23 @@
                 "name_": "Facebook",
                 "preferences_": {},
                 "isActive_": false,
-                "appName_": "Image-Capture",
+                "appName_": "ImageCapture",
                 "appID_": "not.yet.specified",
-                "appAccess_": {
-                    "mode": "legacy",
-                    "network": [
-                        "http://debug-software.intel.com/*"
-                    ],
-                    "intents": [],
-                    "navigation": []
-                },
+                "appAccess_": [
+                    {
+                        "origin": "*"
+                    }
+                ],
                 "icons_": [],
                 "splashes_": [],
                 "addlPermissions_": "",
                 "excludedLibraries_": "",
                 "appAuthor_": "Intel XDK",
                 "appVersion_": "0.0.1"
-            },
-            "WP81": {
-                "platform_": "wp81",
-                "runtime_": "Cordova 3.x",
-                "name_": "WP81",
-                "preferences_": {},
-                "isActive_": true,
-                "appName_": "Image-Capture",
-                "appID_": "not.yet.specified",
-                "appAccess_": {
-                    "mode": "legacy",
-                    "network": [
-                        "http://debug-software.intel.com/*"
-                    ],
-                    "intents": [],
-                    "navigation": []
-                },
-                "icons_": [],
-                "splashes_": [],
-                "addlPermissions_": "",
-                "excludedLibraries_": "",
-                "appVersion_": "0.0.0.1",
-                "cordovaCLIVersion_": "?",
-                "appAuthor_": "Intel XDK"
             }
         },
         "gameAssetDirectory": "asset",
         "gameMetadata": {},
-        "projectTags": [],
-        "testDirectory": "test"
+        "projectTags": []
     }
 }
