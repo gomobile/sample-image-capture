@@ -24,6 +24,23 @@
         "libraries": [],
         "cordovaPlugins": [
             {
+                "id": "org.apache.cordova.statusbar",
+                "name": "StatusBar",
+                "version": "?",
+                "originType": "cordova.io",
+                "origin": "org.apache.cordova.statusbar",
+                "gitref": "",
+                "paramvals": {},
+                "selectedState": "Included",
+                "dependsOn": [],
+                "topLevel": true,
+                "cordovaVersion": "?",
+                "permissions": {},
+                "description": "Cordova StatusBar Plugin",
+                "data": {},
+                "dependedBy": []
+             },
+            {
                 "id": "cordova-plugin-splashscreen",
                 "version": "?",
                 "selectedState": "Included",
@@ -65,11 +82,7 @@
                 "dependedBy": [],
                 "originType": "cordova.io",
                 "origin": "cordova-plugin-camera",
-                "permissions": {
-                    "android:name": [
-                        "android.permission.WRITE_EXTERNAL_STORAGE"
-                    ]
-                },
+                "permissions": {},
                 "topLevel": true,
                 "gitref": "",
                 "name": "Camera",
@@ -78,38 +91,6 @@
         ],
         "serviceMethods": [],
         "buildConfigurations": {
-            "Android": {
-                "platform_": "android",
-                "runtime_": "Cordova 3.x",
-                "name_": "Android",
-                "preferences_": {
-                    "Orientation": "portrait",
-                    "android-minSdkVersion": "14",
-                    "android-targetSdkVersion": "19",
-                    "android-installLocation": "auto"
-                },
-                "isActive_": true,
-                "appName_": "Image-Capture",
-                "appID_": "xdk.sample.cameracapture",
-                "appAccess_": {
-                    "mode": "legacy",
-                    "network": [
-                        "http://debug-software.intel.com/*"
-                    ],
-                    "intents": [],
-                    "navigation": []
-                },
-                "icons_": [],
-                "splashes_": [],
-                "addlPermissions_": "",
-                "excludedLibraries_": "",
-                "cordovaCLIVersion_": "?",
-                "crosswalkVersion_": "?",
-                "appVersion_": "0.0.1",
-                "appAuthor_": "Intel XDK",
-                "appDescription_": "This demonstration illustrates how to use the camera features of hybrid apps.",
-                "appVersionCode_": "1"
-            },
             "Android-Crosswalk": {
                 "platform_": "android",
                 "runtime_": "Crosswalk with Cordova 3.x",
@@ -139,6 +120,38 @@
                 "crosswalkVersion_": "?",
                 "appAuthor_": "Intel XDK",
                 "appVersion_": "0.0.1",
+                "appDescription_": "This demonstration illustrates how to use the camera features of hybrid apps.",
+                "appVersionCode_": "1"
+            },
+            "Android": {
+                "platform_": "android",
+                "runtime_": "Cordova 3.x",
+                "name_": "Android",
+                "preferences_": {
+                    "Orientation": "portrait",
+                    "android-minSdkVersion": "14",
+                    "android-targetSdkVersion": "19",
+                    "android-installLocation": "auto"
+                },
+                "isActive_": true,
+                "appName_": "Image-Capture",
+                "appID_": "xdk.sample.cameracapture",
+                "appAccess_": {
+                    "mode": "legacy",
+                    "network": [
+                        "http://debug-software.intel.com/*"
+                    ],
+                    "intents": [],
+                    "navigation": []
+                },
+                "icons_": [],
+                "splashes_": [],
+                "addlPermissions_": "",
+                "excludedLibraries_": "",
+                "cordovaCLIVersion_": "?",
+                "crosswalkVersion_": "?",
+                "appVersion_": "0.0.1",
+                "appAuthor_": "Intel XDK",
                 "appDescription_": "This demonstration illustrates how to use the camera features of hybrid apps.",
                 "appVersionCode_": "1"
             },
