@@ -1,6 +1,6 @@
 {
     "project": {
-        "projectSettingsVersion": "2.0.0",
+        "projectSettingsVersion": "3.0.0",
         "creationData": {
             "projectTypeName": "com.intel.xdk.projecttype.jsapp",
             "src": "jsapp/sample-image-capture/sample.zip",
@@ -94,7 +94,7 @@
             "Android": {
                 "platform_": "android",
                 "runtime_": "Crosswalk with Cordova 3.x",
-                "name_": "Android-Crosswalk",
+                "name_": "Android",
                 "preferences_": {
                     "Orientation": "portrait",
                     "android-minSdkVersion": "14",
