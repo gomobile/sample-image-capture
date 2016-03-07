@@ -105,7 +105,7 @@
                 "appName_": "Image-Capture",
                 "appID_": "xdk.sample.cameracapture",
                 "appAccess_": {
-                    "mode": "legacy",
+                    "mode": "whitelist",
                     "network": [
                         "http://debug-software.intel.com/*",
                         "https://debug-software.intel.com/*"
