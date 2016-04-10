@@ -98,7 +98,7 @@
                 "preferences_": {
                     "Orientation": "portrait",
                     "android-minSdkVersion": "14",
-                    "android-targetSdkVersion": "23",
+                    "android-targetSdkVersion": "21",
                     "android-installLocation": "auto"
                 },
                 "isActive_": true,
